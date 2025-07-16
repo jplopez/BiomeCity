@@ -3,6 +3,23 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+
+# Project specific files and directories
+Library/
+Logs/
+obj/
+Packages/
+Temp/
+Assets/CorgiEngine/
+Assets/MMData/
+Assets/Plugins/
+Assets/Sprite Shaders Ultimate/
+Assets/TextMesh Pro
+Assets/ThirdParty
+MoreMountains*.csproj
+BetterHierarchy*.csproj
+
+
 # User-specific files
 *.rsuser
 *.suo
