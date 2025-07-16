@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SSU_Platforms_Contrast_Outline
+  m_Shader: {fileID: 4800000, guid: 0803c241834332942abfcbd27c498b46, type: 3}
+  m_Parent: {fileID: 2100000, guid: 9f7447347aeec704f959caf38a4070a9, type: 2}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - ETC1_EXTERNAL_ALPHA
+  - _ENABLECONTRAST_ON
+  - _ENABLEINNEROUTLINE_ON
+  - _SHADERFADING_NONE
+  - _SHADERSPACE_UV
+  - _STRONGTINTCONTRASTTOGGLE_ON
+  - _TEXTURELAYER1SHEETTOGGLE_ON
+  - _TEXTURELAYER2SHEETTOGGLE_ON
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - _Contrast: 1.2
+    - _EnableContrast: 1
+    - _EnableInnerOutline: 1
+    - _EnableOuterOutline: 0
+    - _InnerOutlineDistortionToggle: 0
+    - _InnerOutlineFade: 1
+    - _InnerOutlineOutlineOnlyToggle: 0
+    - _InnerOutlineTextureToggle: 0
+    - _InnerOutlineWidth: 0.02
+    - _OuterOutlineWidth: 0.03
+    m_Colors:
+    - _InnerOutlineColor: {r: 0.014213019, g: 0.22820553, b: 0.081014715, a: 1}
+    - _OuterOutlineColor: {r: 0.39959496, g: 0.6985898, b: 0.44772974, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

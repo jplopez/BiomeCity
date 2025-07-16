@@ -1,0 +1,19 @@
+{
+    "name": "Ameba.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:c4a4535d79a58a542974e749952f8f3c",
+        "GUID:7c04f0dfa9243c04681a55d90d3ff3fc"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
