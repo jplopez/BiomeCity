@@ -1080,7 +1080,7 @@ Transform:
   m_GameObject: {fileID: 95066891}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30.1, y: 22.6, z: 0}
+  m_LocalPosition: {x: 55, y: 24, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1146,9 +1146,9 @@ SpriteRenderer:
   m_SortingLayerID: -1620175883
   m_SortingLayer: -1
   m_SortingOrder: -90
-  m_Sprite: {fileID: 21300000, guid: 13795f6537eca9449810d7907c46028a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c0370331a9639864c9cc388f4d63f3d1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 90, y: 30.014648}
@@ -5312,7 +5312,7 @@ Transform:
   m_GameObject: {fileID: 444875544}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 77.07, y: 38.75, z: 0}
+  m_LocalPosition: {x: 119.5, y: 28.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8193,42 +8193,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelManager
       objectReference: {fileID: 0}
-    - target: {fileID: 4307637007701877735, guid: cc34c533a57e6ce44ab7845c36bf1b41,
-        type: 3}
-      propertyPath: m_Layer
-      value: 21
-      objectReference: {fileID: 0}
     - target: {fileID: 5849883546211589454, guid: cc34c533a57e6ce44ab7845c36bf1b41,
         type: 3}
       propertyPath: DebugSpawn
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5849883546211589454, guid: cc34c533a57e6ce44ab7845c36bf1b41,
-        type: 3}
-      propertyPath: LevelBounds.m_Center.x
-      value: 66.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5849883546211589454, guid: cc34c533a57e6ce44ab7845c36bf1b41,
-        type: 3}
-      propertyPath: LevelBounds.m_Center.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5849883546211589454, guid: cc34c533a57e6ce44ab7845c36bf1b41,
-        type: 3}
-      propertyPath: LevelBounds.m_Extent.x
-      value: 120
-      objectReference: {fileID: 0}
-    - target: {fileID: 5849883546211589454, guid: cc34c533a57e6ce44ab7845c36bf1b41,
-        type: 3}
-      propertyPath: LevelBounds.m_Extent.y
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 5849883546211589454, guid: cc34c533a57e6ce44ab7845c36bf1b41,
-        type: 3}
-      propertyPath: 'PlayerPrefabs.Array.data[0]'
-      value: 
-      objectReference: {fileID: 5062782273387271771, guid: 267579f3d98948c4cbda33d8c9677237,
-        type: 3}
+      objectReference: {fileID: 444875546}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8658,7 +8627,7 @@ PrefabInstance:
     - target: {fileID: 6651406206867608696, guid: ee0c23e268da17e4996d1eeecb8e86cd,
         type: 3}
       propertyPath: Lens.OrthographicSize
-      value: 14.80333
+      value: 14.00007
       objectReference: {fileID: 0}
     - target: {fileID: 6932121404212390242, guid: ee0c23e268da17e4996d1eeecb8e86cd,
         type: 3}
@@ -8678,7 +8647,7 @@ PrefabInstance:
     - target: {fileID: 8040196612442320769, guid: ee0c23e268da17e4996d1eeecb8e86cd,
         type: 3}
       propertyPath: orthographic size
-      value: 14.80333
+      value: 14.00007
       objectReference: {fileID: 0}
     - target: {fileID: 8040196612442320774, guid: ee0c23e268da17e4996d1eeecb8e86cd,
         type: 3}
@@ -12265,7 +12234,7 @@ PrefabInstance:
     - target: {fileID: 4606559457134709221, guid: 0c68ead9a9f573741bfe6d05639715f1,
         type: 3}
       propertyPath: OnlyMovesWhenPlayerIsColliding
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4606559457134709221, guid: 0c68ead9a9f573741bfe6d05639715f1,
         type: 3}
@@ -15572,7 +15541,7 @@ Transform:
   m_GameObject: {fileID: 1795464993}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 83.83002, y: 26.525013, z: 0}
+  m_LocalPosition: {x: 55, y: 24, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -15591,8 +15560,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UpdateMode: 1
-  HorizontalSpeed: 0.15
-  VerticalSpeed: 0.1
+  HorizontalSpeed: 0.025
+  VerticalSpeed: 0.025
   MoveInOppositeDirection: 1
 --- !u!212 &1795464996
 SpriteRenderer:
@@ -15638,9 +15607,9 @@ SpriteRenderer:
   m_SortingLayerID: -1620175883
   m_SortingLayer: -1
   m_SortingOrder: -70
-  m_Sprite: {fileID: 21300000, guid: 809dc74769ab5fc45a005d8d8acf3fab, type: 3}
+  m_Sprite: {fileID: 21300000, guid: defab752da4965649a01604159d82f93, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 100, y: 50}
