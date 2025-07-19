@@ -61,6 +61,7 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.1.0f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\_Game\Scripts\Ameba\Editor\Runtime\RuntimeRegistryEditor.cs" />
     <Compile Include="Assets\_Game\Scripts\Ameba\Editor\ProtoBlockEditor.cs" />
     <Compile Include="Assets\_Game\Scripts\Ameba\Editor\InspectorButtonEditor.cs" />
     <Compile Include="Assets\_Game\Scripts\Ameba\Editor\ActionButtonEditor.cs" />
@@ -1158,6 +1159,14 @@
     <ProjectReference Include="BiomeCity.csproj">
       <Project>{88A3B4B5-F0F2-7A80-BF95-6DF1BAFFF3D3}</Project>
       <Name>BiomeCity</Name>
+    </ProjectReference>
+    <ProjectReference Include="MoreMountains.CorgiEngine.csproj">
+      <Project>{2EBA7662-705B-5291-B0EF-3F49170D7033}</Project>
+      <Name>MoreMountains.CorgiEngine</Name>
+    </ProjectReference>
+    <ProjectReference Include="MoreMountains.Tools.csproj">
+      <Project>{02956CF0-B4B5-C6CE-56F4-882ED686D37F}</Project>
+      <Name>MoreMountains.Tools</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
