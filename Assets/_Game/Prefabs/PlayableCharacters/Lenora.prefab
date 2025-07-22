@@ -5505,7 +5505,7 @@ MonoBehaviour:
     m_Bits: 262144
   OneWayPlatformMask:
     serializedVersion: 2
-    m_Bits: 2415921152
+    m_Bits: 2483030016
   MovingOneWayPlatformMask:
     serializedVersion: 2
     m_Bits: 1048576
@@ -6364,7 +6364,7 @@ PrefabInstance:
     - target: {fileID: -7552582706839291426, guid: 52a2f584f5b7c5643963c63130ae1fb7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.7
+      value: -2.656
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 52a2f584f5b7c5643963c63130ae1fb7,
         type: 3}

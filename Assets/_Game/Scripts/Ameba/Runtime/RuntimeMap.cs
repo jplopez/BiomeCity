@@ -20,7 +20,7 @@ namespace Ameba.Runtime {
     protected List<KeyValue> _items = new();
 
     protected virtual void AddKeyValue(KeyValue newKv) {
-      // prevent duplicates based on key
+      // prevent duplicates based on Key
       if (!_items.Any(kv => kv.key.Equals(newKv.key))) {
         _items.Add(newKv);
       }

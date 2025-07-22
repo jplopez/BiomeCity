@@ -1,0 +1,163 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library:
+  - m_Name: Platform
+    m_Hash: 2405021
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Pink
+      m_Hash: 206692072
+      m_Sprite: {fileID: -4181698440212295486, guid: 278a12ab07d389a42b61c8275f19f6fc,
+        type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -4181698440212295486, guid: 278a12ab07d389a42b61c8275f19f6fc,
+        type: 3}
+    - m_Name: Red
+      m_Hash: 36444527
+      m_Sprite: {fileID: -6458380759552419247, guid: 278a12ab07d389a42b61c8275f19f6fc,
+        type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -6458380759552419247, guid: 278a12ab07d389a42b61c8275f19f6fc,
+        type: 3}
+    - m_Name: Green
+      m_Hash: 291225893
+      m_Sprite: {fileID: 4108788396526444629, guid: 278a12ab07d389a42b61c8275f19f6fc,
+        type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 4108788396526444629, guid: 278a12ab07d389a42b61c8275f19f6fc,
+        type: 3}
+    - m_Name: Purple
+      m_Hash: 757692368
+      m_Sprite: {fileID: -3520907451580257198, guid: 278a12ab07d389a42b61c8275f19f6fc,
+        type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -3520907451580257198, guid: 278a12ab07d389a42b61c8275f19f6fc,
+        type: 3}
+    - m_Name: Blue
+      m_Hash: 1040475530
+      m_Sprite: {fileID: 3039306078312512588, guid: 278a12ab07d389a42b61c8275f19f6fc,
+        type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 3039306078312512588, guid: 278a12ab07d389a42b61c8275f19f6fc,
+        type: 3}
+    - m_Name: Teal
+      m_Hash: 332741047
+      m_Sprite: {fileID: -2557010462711007501, guid: 278a12ab07d389a42b61c8275f19f6fc,
+        type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2557010462711007501, guid: 278a12ab07d389a42b61c8275f19f6fc,
+        type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 6
+  - m_Name: Crystal
+    m_Hash: 137832069
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: GreenSE
+      m_Hash: 308910829
+      m_Sprite: {fileID: 5960509469352401788, guid: 9bec012374f14bc43b660fcd7c6e50dc,
+        type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 5960509469352401788, guid: 9bec012374f14bc43b660fcd7c6e50dc,
+        type: 3}
+    - m_Name: PurpleNW
+      m_Hash: 360020106
+      m_Sprite: {fileID: -8695991483708958189, guid: 9bec012374f14bc43b660fcd7c6e50dc,
+        type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -8695991483708958189, guid: 9bec012374f14bc43b660fcd7c6e50dc,
+        type: 3}
+    - m_Name: PinkNE
+      m_Hash: 509202189
+      m_Sprite: {fileID: 4208960368503825881, guid: 9bec012374f14bc43b660fcd7c6e50dc,
+        type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 4208960368503825881, guid: 9bec012374f14bc43b660fcd7c6e50dc,
+        type: 3}
+    - m_Name: GreenSW
+      m_Hash: 567339941
+      m_Sprite: {fileID: 7777818551128676192, guid: 9bec012374f14bc43b660fcd7c6e50dc,
+        type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 7777818551128676192, guid: 9bec012374f14bc43b660fcd7c6e50dc,
+        type: 3}
+    - m_Name: GreenS
+      m_Hash: 729112645
+      m_Sprite: {fileID: -3117062809557752461, guid: 9bec012374f14bc43b660fcd7c6e50dc,
+        type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -3117062809557752461, guid: 9bec012374f14bc43b660fcd7c6e50dc,
+        type: 3}
+    - m_Name: PinkSW
+      m_Hash: 311218777
+      m_Sprite: {fileID: -865811393806371451, guid: 9bec012374f14bc43b660fcd7c6e50dc,
+        type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -865811393806371451, guid: 9bec012374f14bc43b660fcd7c6e50dc,
+        type: 3}
+    - m_Name: PinkSE
+      m_Hash: 557163281
+      m_Sprite: {fileID: -437237730261388913, guid: 9bec012374f14bc43b660fcd7c6e50dc,
+        type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -437237730261388913, guid: 9bec012374f14bc43b660fcd7c6e50dc,
+        type: 3}
+    - m_Name: OrangeNW
+      m_Hash: 953858900
+      m_Sprite: {fileID: -5596954954665145375, guid: 9bec012374f14bc43b660fcd7c6e50dc,
+        type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -5596954954665145375, guid: 9bec012374f14bc43b660fcd7c6e50dc,
+        type: 3}
+    - m_Name: BlueNE
+      m_Hash: 354492025
+      m_Sprite: {fileID: -1185952494239367324, guid: 9bec012374f14bc43b660fcd7c6e50dc,
+        type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1185952494239367324, guid: 9bec012374f14bc43b660fcd7c6e50dc,
+        type: 3}
+    - m_Name: OrangeSE
+      m_Hash: 873440768
+      m_Sprite: {fileID: -3509497520514473754, guid: 9bec012374f14bc43b660fcd7c6e50dc,
+        type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -3509497520514473754, guid: 9bec012374f14bc43b660fcd7c6e50dc,
+        type: 3}
+    - m_Name: BlueSW
+      m_Hash: 435421997
+      m_Sprite: {fileID: -4560896191074717041, guid: 9bec012374f14bc43b660fcd7c6e50dc,
+        type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -4560896191074717041, guid: 9bec012374f14bc43b660fcd7c6e50dc,
+        type: 3}
+    - m_Name: TealNW
+      m_Hash: 783095681
+      m_Sprite: {fileID: 8664446073719585316, guid: 9bec012374f14bc43b660fcd7c6e50dc,
+        type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 8664446073719585316, guid: 9bec012374f14bc43b660fcd7c6e50dc,
+        type: 3}
+    - m_Name: TealS
+      m_Hash: 896933077
+      m_Sprite: {fileID: 2636888028266357737, guid: 9bec012374f14bc43b660fcd7c6e50dc,
+        type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2636888028266357737, guid: 9bec012374f14bc43b660fcd7c6e50dc,
+        type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 13
+  m_PrimaryLibraryGUID: 
+  m_ModificationHash: 638886373277090945
+  m_Version: 1

@@ -35,9 +35,9 @@ namespace BiomeCity {
       _library = MaterialLibrary.Instance;
     }
     /// <summary>
-    /// Instantiates a new GameObject with a SpriteRenderer using the specified material index.
+    /// Instantiates a new GameObject with a SpriteRenderer using the specified _doorMaterial index.
     /// </summary>
-    /// <param name="materialIndex">Index of the material to use from the Materials list.</param>
+    /// <param name="materialIndex">Index of the _doorMaterial to use from the Materials list.</param>
     /// <returns>The instantiated GameObject.</returns>
     public GameObject InstantiateObject(int materialIndex = 0) {
       var go = new GameObject(name);
@@ -45,7 +45,7 @@ namespace BiomeCity {
       var renderer = go.AddComponent<SpriteRenderer>();
       renderer.sprite = DefaultSprite;
 
-      // Use MaterialLibrary to get the correct material
+      // Use MaterialLibrary to get the correct _doorMaterial
       Material mat = _library.GetMaterial(MaterialOption);
       if (mat != null)
         renderer.sharedMaterial = mat;

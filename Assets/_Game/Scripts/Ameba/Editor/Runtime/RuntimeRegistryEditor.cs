@@ -75,7 +75,7 @@ namespace Ameba.Runtime.Editor {
     //    rect.height = EditorGUIUtility.singleLineHeight;
 
     //    var sceneName = element.FindPropertyRelative("SceneName");
-    //    string name = sceneName.stringValue;
+    //    string name = sceneName.StringValue;
     //    EditorGUI.PropertyField(rect, sceneName, new GUIContent(string.IsNullOrEmpty(name) ? $"Scene {index}" : name));
     //  };
 

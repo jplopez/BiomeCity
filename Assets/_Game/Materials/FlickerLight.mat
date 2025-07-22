@@ -12,6 +12,7 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
+  - _ENABLEALPHATINT_ON
   - _ENABLEBRIGHTNESS_ON
   - _SHADERFADING_NONE
   - _SHADERSPACE_UV
@@ -150,7 +151,7 @@ Material:
     - _BakedMaterial: 0
     - _BlackTintFade: 1
     - _BlackTintPower: 4
-    - _Brightness: 1
+    - _Brightness: 1.5
     - _BurnEdgeNoiseFactor: 0.5
     - _BurnFade: 1
     - _BurnInsideContrast: 2
@@ -193,7 +194,7 @@ Material:
     - _DirectionalGlowFadeWidth: 0.1
     - _EnableAddColor: 0
     - _EnableAddHue: 0
-    - _EnableAlphaTint: 0
+    - _EnableAlphaTint: 1
     - _EnableBlackTint: 0
     - _EnableBrightness: 1
     - _EnableBurn: 0
@@ -464,9 +465,9 @@ Material:
     - _UVRotateSpeed: 1
     - _VertexTintFirst: 0
     - _VibrateFade: 1
-    - _VibrateFrequency: 100
-    - _VibrateOffset: 0.04
-    - _VibrateRotation: 4
+    - _VibrateFrequency: 10
+    - _VibrateOffset: 0.01
+    - _VibrateRotation: 1
     - _WiggleFade: 1
     - _WiggleFixedGroundToggle: 0
     - _WiggleFrequency: 2
@@ -490,7 +491,7 @@ Material:
     - _ZWrite: 0
     m_Colors:
     - _AddColorColor: {r: 2.996078, g: 0, b: 0, a: 0}
-    - _AlphaTintColor: {r: 95.87451, g: 5.019608, b: 95.87451, a: 0}
+    - _AlphaTintColor: {r: 0.34940428, g: 1.7674417, b: 2.0019922, a: 0}
     - _BlackTintColor: {r: 0, g: 0, b: 1, a: 0}
     - _BurnEdgeColor: {r: 11.98431, g: 1.129412, b: 0.1254902, a: 0}
     - _BurnEdgeNoiseScale: {r: 0.3, g: 0.3, b: 0, a: 0}
@@ -557,8 +558,8 @@ Material:
     - _InnerOutlineNoiseScale: {r: 4, g: 4, b: 0, a: 0}
     - _InnerOutlineNoiseSpeed: {r: 0, g: 0.1, b: 0, a: 0}
     - _InnerOutlineTextureSpeed: {r: 0.5, g: 0, b: 0, a: 0}
-    - _MetalColor: {r: 5.992157, g: 3.639216, b: 0.3137255, a: 1}
-    - _MetalHighlightColor: {r: 5.992157, g: 3.796078, b: 0.6588235, a: 1}
+    - _MetalColor: {r: 0.3137254, g: 3.6671052, b: 5.992157, a: 1}
+    - _MetalHighlightColor: {r: 1.9716982, g: 1.99055, b: 2, a: 1}
     - _MetalNoiseDistortion: {r: 0.5, g: 0.5, b: 0, a: 0}
     - _MetalNoiseDistortionScale: {r: 0.2, g: 0.2, b: 0, a: 0}
     - _MetalNoiseDistortionSpeed: {r: -0.05, g: -0.05, b: 0, a: 0}

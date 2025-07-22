@@ -1,0 +1,573 @@
+{
+  "9": {
+    "inputs": {
+      "filename_prefix": "char_"
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  },
+  "10": {
+    "inputs": {
+      "ckpt_name": "animagineXL40_v4Opt.safetensors"
+    },
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": {
+      "title": "Load Checkpoint"
+    }
+  },
+  "20": {
+    "inputs": {
+      "vae_name": "sdxl_vae.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "24": {
+    "inputs": {
+      "stop_at_clip_layer": -2,
+      "clip": [
+        "10",
+        1
+      ]
+    },
+    "class_type": "CLIPSetLastLayer",
+    "_meta": {
+      "title": "Clip skip (CLIP Set Last Layer)"
+    }
+  },
+  "25": {
+    "inputs": {
+      "lora_name": "GenshinImpact\\Characters\\Furina_v3.safetensors",
+      "strength_model": 0.8000000000000002,
+      "strength_clip": 1.0000000000000002,
+      "model": [
+        "10",
+        0
+      ],
+      "clip": [
+        "24",
+        0
+      ]
+    },
+    "class_type": "LoraLoader",
+    "_meta": {
+      "title": "Load LoRA"
+    }
+  },
+  "29": {
+    "inputs": {
+      "lora_name": "Chars\\aesthetic_anime_v1s.safetensors",
+      "strength_model": 0.9000000000000001,
+      "strength_clip": 1.0000000000000002,
+      "model": [
+        "25",
+        0
+      ],
+      "clip": [
+        "25",
+        1
+      ]
+    },
+    "class_type": "LoraLoader",
+    "_meta": {
+      "title": "Load LoRA"
+    }
+  },
+  "31": {
+    "inputs": {
+      "action": "append",
+      "tidy_tags": "yes",
+      "text_a": [
+        "346",
+        0
+      ],
+      "text_b": [
+        "431",
+        0
+      ],
+      "text_c": "((solo)),masterpiece, best quality, very aesthetic, absurdres, \nsimple background, white background,\nembedding:easynegative, ",
+      "result": "1girl, furina \\(genshin impact\\), full-shot, full-body,\ntop hat,\nlaying on back in the beach. (heterochromia:1.2),detailed eyes, blue eyes,\n(blue bikini:1.1). ahoge, closed mouth, smile, blush, cleavage, ((solo)),masterpiece, best quality, very aesthetic, absurdres, simple background, white background,\nembedding:easynegative,"
+    },
+    "class_type": "StringFunction|pysssss",
+    "_meta": {
+      "title": "Add Positive Prompt String Function 🐍"
+    }
+  },
+  "33": {
+    "inputs": {
+      "lora_name": "Detailer\\hand 5.5.safetensors",
+      "strength_model": 0.7000000000000002,
+      "strength_clip": 1.0000000000000002,
+      "model": [
+        "29",
+        0
+      ],
+      "clip": [
+        "29",
+        1
+      ]
+    },
+    "class_type": "LoraLoader",
+    "_meta": {
+      "title": "Load LoRA"
+    }
+  },
+  "46": {
+    "inputs": {
+      "model": [
+        "487",
+        0
+      ],
+      "clip": [
+        "33",
+        1
+      ],
+      "vae": [
+        "10",
+        2
+      ],
+      "positive": [
+        "451",
+        0
+      ],
+      "negative": [
+        "451",
+        1
+      ]
+    },
+    "class_type": "ToBasicPipe",
+    "_meta": {
+      "title": "ToBasicPipe"
+    }
+  },
+  "88": {
+    "inputs": {
+      "width": [
+        "407",
+        0
+      ],
+      "height": [
+        "407",
+        1
+      ],
+      "batch_size": [
+        "321",
+        0
+      ]
+    },
+    "class_type": "EmptyLatentImage",
+    "_meta": {
+      "title": "BasicSize(Empty Latent Image)"
+    }
+  },
+  "102": {
+    "inputs": {
+      "image": "ComfyUI_00039_.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "277": {
+    "inputs": {
+      "value": 7
+    },
+    "class_type": "ImpactFloat",
+    "_meta": {
+      "title": "CFG (ImpactFloat)"
+    }
+  },
+  "278": {
+    "inputs": {
+      "value": 24
+    },
+    "class_type": "ImpactInt",
+    "_meta": {
+      "title": "Steps (ImpactInt)"
+    }
+  },
+  "281": {
+    "inputs": {
+      "sampler_name": "euler_ancestral"
+    },
+    "class_type": "Sampler Selector",
+    "_meta": {
+      "title": "Sampler Selector"
+    }
+  },
+  "300": {
+    "inputs": {
+      "image": [
+        "406",
+        0
+      ]
+    },
+    "class_type": "ImpactImageBatchToImageList",
+    "_meta": {
+      "title": "Image Batch to Image List"
+    }
+  },
+  "319": {
+    "inputs": {
+      "add_noise": true,
+      "noise_seed": 412594876450983,
+      "steps": [
+        "278",
+        0
+      ],
+      "cfg": 8,
+      "sampler_name": "dpmpp_2m",
+      "scheduler": "karras",
+      "start_at_step": 0,
+      "end_at_step": 10000,
+      "return_with_leftover_noise": false,
+      "basic_pipe": [
+        "46",
+        0
+      ],
+      "latent_image": [
+        "88",
+        0
+      ]
+    },
+    "class_type": "ImpactKSamplerAdvancedBasicPipe",
+    "_meta": {
+      "title": "KSampler (Advanced/pipe)"
+    }
+  },
+  "321": {
+    "inputs": {
+      "int": 2
+    },
+    "class_type": "Int Literal",
+    "_meta": {
+      "title": "Batch Size (Int Literal)"
+    }
+  },
+  "346": {
+    "inputs": {
+      "action": "append",
+      "tidy_tags": "yes",
+      "text_a": "1girl,",
+      "text_b": "furina \\(genshin impact\\)",
+      "text_c": "full-shot, full-body,\ntop hat,\nlaying on back in the beach. \n(heterochromia:1.2),detailed eyes, blue eyes,\n(blue bikini:1.1). ahoge, closed mouth, smile, blush, cleavage,\n\n",
+      "result": "1girl, furina \\(genshin impact\\), full-shot, full-body,\ntop hat,\nlaying on back in the beach. (heterochromia:1.2),detailed eyes, blue eyes,\n(blue bikini:1.1). ahoge, closed mouth, smile, blush, cleavage,"
+    },
+    "class_type": "StringFunction|pysssss",
+    "_meta": {
+      "title": "Add Positive Prompt String Function 🐍"
+    }
+  },
+  "404": {
+    "inputs": {
+      "text": [
+        "31",
+        0
+      ],
+      "clip": [
+        "33",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Positive CLIP Text Encode (Prompt)"
+    }
+  },
+  "405": {
+    "inputs": {
+      "text": [
+        "432",
+        0
+      ],
+      "clip": [
+        "33",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Negative CLIP Text Encode (Prompt)"
+    }
+  },
+  "406": {
+    "inputs": {
+      "tile_size": 768,
+      "overlap": 64,
+      "temporal_size": 64,
+      "temporal_overlap": 8,
+      "samples": [
+        "319",
+        1
+      ],
+      "vae": [
+        "10",
+        2
+      ]
+    },
+    "class_type": "VAEDecodeTiled",
+    "_meta": {
+      "title": "VAE Decode (Tiled)"
+    }
+  },
+  "407": {
+    "inputs": {
+      "preset": " 768 x 1344"
+    },
+    "class_type": "SizeFromPresetsSDXL",
+    "_meta": {
+      "title": "Size From Presets (SDXL)"
+    }
+  },
+  "431": {
+    "inputs": {
+      "string": ""
+    },
+    "class_type": "String Literal",
+    "_meta": {
+      "title": "String Literal"
+    }
+  },
+  "432": {
+    "inputs": {
+      "string": "text, error, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name\nextra limbs, \nsymmetrical eyes"
+    },
+    "class_type": "String Literal",
+    "_meta": {
+      "title": "Negative Prompt (String Literal)"
+    }
+  },
+  "437": {
+    "inputs": {
+      "seed": 599912710315511
+    },
+    "class_type": "Seed Everywhere",
+    "_meta": {
+      "title": "Seed Everywhere"
+    }
+  },
+  "441": {
+    "inputs": {
+      "preprocessor": "openpose",
+      "sd_version": "sdxl",
+      "resolution": 1024,
+      "preprocessor_override": "None",
+      "image": [
+        "454",
+        0
+      ]
+    },
+    "class_type": "AV_ControlNetPreprocessor",
+    "_meta": {
+      "title": "ControlNet Preprocessor"
+    }
+  },
+  "445": {
+    "inputs": {
+      "switch_1": "On",
+      "controlnet_1": "SDXL\\controlnet-union-sdxl-1.0\\diffusion_pytorch_model_promax.safetensors",
+      "controlnet_strength_1": 1.5000000000000002,
+      "start_percent_1": 1,
+      "end_percent_1": 1,
+      "switch_2": "Off",
+      "controlnet_2": "SDXL\\controlnet-union-sdxl-1.0\\diffusion_pytorch_model_promax.safetensors",
+      "controlnet_strength_2": 1,
+      "start_percent_2": 0,
+      "end_percent_2": 1,
+      "switch_3": "Off",
+      "controlnet_3": "SDXL\\controlnet-union-sdxl-1.0\\diffusion_pytorch_model_promax.safetensors",
+      "controlnet_strength_3": 1,
+      "start_percent_3": 0.5000000000000001,
+      "end_percent_3": 1,
+      "image_1": [
+        "455",
+        0
+      ],
+      "image_2": [
+        "473",
+        0
+      ],
+      "image_3": [
+        "478",
+        0
+      ]
+    },
+    "class_type": "CR Multi-ControlNet Stack",
+    "_meta": {
+      "title": "🕹️ CR Multi-ControlNet Stack"
+    }
+  },
+  "451": {
+    "inputs": {
+      "switch": "On",
+      "base_positive": [
+        "404",
+        0
+      ],
+      "base_negative": [
+        "405",
+        0
+      ],
+      "controlnet_stack": [
+        "445",
+        0
+      ]
+    },
+    "class_type": "CR Apply Multi-ControlNet",
+    "_meta": {
+      "title": "🕹️ CR Apply Multi-ControlNet"
+    }
+  },
+  "454": {
+    "inputs": {
+      "Input": 2,
+      "image1": [
+        "102",
+        0
+      ],
+      "image2": [
+        "455",
+        0
+      ]
+    },
+    "class_type": "CR Image Input Switch",
+    "_meta": {
+      "title": "🔀 CR Image Input Switch"
+    }
+  },
+  "455": {
+    "inputs": {
+      "image": "laying_05.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "473": {
+    "inputs": {
+      "preprocessor": "canny",
+      "sd_version": "sdxl",
+      "resolution": 1024,
+      "preprocessor_override": "None",
+      "image": [
+        "474",
+        0
+      ]
+    },
+    "class_type": "AV_ControlNetPreprocessor",
+    "_meta": {
+      "title": "ControlNet Preprocessor"
+    }
+  },
+  "474": {
+    "inputs": {
+      "Input": 2,
+      "image1": [
+        "102",
+        0
+      ],
+      "image2": [
+        "475",
+        0
+      ]
+    },
+    "class_type": "CR Image Input Switch",
+    "_meta": {
+      "title": "🔀 CR Image Input Switch"
+    }
+  },
+  "475": {
+    "inputs": {
+      "image": "tpose_01.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "478": {
+    "inputs": {
+      "preprocessor": "depth",
+      "sd_version": "sdxl",
+      "resolution": 1024,
+      "preprocessor_override": "None",
+      "image": [
+        "479",
+        0
+      ]
+    },
+    "class_type": "AV_ControlNetPreprocessor",
+    "_meta": {
+      "title": "ControlNet Preprocessor"
+    }
+  },
+  "479": {
+    "inputs": {
+      "Input": 1,
+      "image1": [
+        "102",
+        0
+      ],
+      "image2": [
+        "480",
+        0
+      ]
+    },
+    "class_type": "CR Image Input Switch",
+    "_meta": {
+      "title": "🔀 CR Image Input Switch"
+    }
+  },
+  "480": {
+    "inputs": {
+      "image": "tpose_01.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "487": {
+    "inputs": {
+      "Input": 2,
+      "model2": [
+        "33",
+        0
+      ]
+    },
+    "class_type": "CR Model Input Switch",
+    "_meta": {
+      "title": "🔀 CR Model Input Switch"
+    }
+  },
+  "488": {
+    "inputs": {
+      "images": [
+        "406",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "493": {
+    "inputs": {
+      "images": [
+        "441",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  }
+}

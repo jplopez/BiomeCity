@@ -185,7 +185,7 @@ GameObject:
   - component: {fileID: 6473215985766886083}
   - component: {fileID: 7369525574793121107}
   - component: {fileID: 1824845430784745677}
-  m_Layer: 11
+  m_Layer: 26
   m_Name: Pipe_OneWayPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
