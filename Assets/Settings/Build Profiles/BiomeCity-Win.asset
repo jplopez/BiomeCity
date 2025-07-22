@@ -20,8 +20,6 @@ MonoBehaviour:
     rid: 8314078189452787712
   m_OverrideGlobalSceneList: 1
   m_Scenes:
-  - m_enabled: 0
-    m_path: Assets/_Game/Scenes/BiomeCity.unity
   - m_enabled: 1
     m_path: Assets/_Game/Scenes/BiomeCity2.5D.unity
   m_ScriptingDefines: []

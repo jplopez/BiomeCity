@@ -66,5 +66,11 @@ TagManager:
   - name: UI
     uniqueID: 3241408355
     locked: 0
+  - name: Indoor-Default
+    uniqueID: 1706793229
+    locked: 0
+  - name: Indoor-Background
+    uniqueID: 1512945157
+    locked: 0
   m_RenderingLayers:
   - Default

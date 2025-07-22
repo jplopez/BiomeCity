@@ -61,12 +61,15 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.1.0f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\_Game\Scripts\Ameba\ComfyUnity\ComfyUtils.cs" />
     <Compile Include="Assets\_Game\Scripts\Ameba\CorgiEngine\Runtime\LevelManagerRegistry.cs" />
     <Compile Include="Assets\_Game\Scripts\Ameba\Runtime\Registry\RuntimeConfigApplier.cs" />
     <Compile Include="Assets\_Game\Scripts\CorgiEngine\Feedbacks\MMF_IKFeedback.cs" />
+    <Compile Include="Assets\_Game\Scripts\Ameba\ComfyUnity\ComfyUnity.cs" />
     <Compile Include="Assets\_Game\Scripts\Ameba\ProtoBlock.cs" />
     <Compile Include="Assets\_Game\Scripts\BiomeCity\TexturedObject.cs" />
     <Compile Include="Assets\_Game\Scripts\Ameba\Runtime\RuntimeSet.cs" />
+    <Compile Include="Assets\_Game\Scripts\Ameba\ComfyUnity\ComfyNodeDef.cs" />
     <Compile Include="Assets\_Game\Scripts\Ameba\Attributes\ActionButtonAttribute.cs" />
     <Compile Include="Assets\_Game\Scripts\Ameba\MaterialTilingOffset.cs" />
     <Compile Include="Assets\_Game\Scripts\Ameba\CorgiEngine\Runtime\LevelManagerInitializer.cs" />
@@ -74,9 +77,11 @@
     <Compile Include="Assets\_Game\Scripts\Ameba\Runtime\GameObjectRuntimeSet.cs" />
     <Compile Include="Assets\_Game\Scripts\Ameba\Runtime\IConfigFieldCopier.cs" />
     <Compile Include="Assets\_Game\Scripts\Ameba\Runtime\Registry\RuntimeRegistryInitializer.cs" />
+    <Compile Include="Assets\_Game\Scripts\Ameba\ComfyUnity\WorkflowNode.cs" />
     <Compile Include="Assets\_Game\Scripts\CorgiEngine\Weapons\WeaponIK2D.cs" />
     <Compile Include="Assets\_Game\Scripts\Events\WallClingingEventListener.cs" />
     <Compile Include="Assets\_Game\Scripts\Events\BaseMMEventListener.cs" />
+    <Compile Include="Assets\_Game\Scripts\BiomeCity\YAxisOscillator.cs" />
     <Compile Include="Assets\_Game\Scripts\Tools\ParticleTrigger.cs" />
     <Compile Include="Assets\_Game\Scripts\CorgiEngine\Agents\CharacterAbilities\CharacterJumpExt.cs" />
     <Compile Include="Assets\_Game\Scripts\CorgiEngine\Weapons\ProjectileWeaponExt.cs" />
@@ -88,14 +93,19 @@
     <Compile Include="Assets\_Game\Scripts\Ameba\CorgiEngine\Runtime\LevelConfig.cs" />
     <Compile Include="Assets\_Game\Scripts\CorgiEngine\Agents\CharacterAbilities\CharacterDashExt.cs" />
     <Compile Include="Assets\_Game\Scripts\BiomeCity\MaterialLibrary.cs" />
+    <Compile Include="Assets\_Game\Scripts\Ameba\SSU\SSUShaderBase.cs" />
     <Compile Include="Assets\_Game\Scripts\BiomeCity\Editor\PlatformTemplateEditor.cs" />
     <Compile Include="Assets\_Game\Scripts\BiomeCity\Building.cs" />
     <Compile Include="Assets\_Game\Scripts\BiomeCity\Platforms\PlatformController.cs" />
     <Compile Include="Assets\_Game\Scripts\Ameba\Attributes\InspectorButtonAttribute.cs" />
+    <Compile Include="Assets\_Game\Scripts\Ameba\ComfyUnity\ComfyTester.cs" />
     <Compile Include="Assets\_Game\Scripts\CorgiEngine\Extensions\CharacterAbilitiesExtensions.cs" />
     <Compile Include="Assets\_Game\Scripts\Ameba\Runtime\Attributes\RuntimeConfigAttribute.cs" />
     <Compile Include="Assets\_Game\Scripts\Ameba\Runtime\Registry\RuntimeRegistry.cs" />
+    <Compile Include="Assets\_Game\Scripts\Ameba\ComfyUnity\VarEntry.cs" />
     <Compile Include="Assets\_Game\Scripts\Ameba\Runtime\Attributes\ConfigFieldAttribute.cs" />
+    <Compile Include="Assets\_Game\Scripts\BiomeCity\VerticalOscillator.cs" />
+    <Compile Include="Assets\_Game\Scripts\BiomeCity\HotelDoorController.cs" />
     <Compile Include="Assets\_Game\Scripts\BiomeCity\IAccessory.cs" />
     <Compile Include="Assets\_Game\Scripts\Ameba\CorgiEngine\Extensions\LevelManagerExtensions.cs" />
   </ItemGroup>
