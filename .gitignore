@@ -378,3 +378,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Assets/Custom Character_Vol1
+/Assets/Free Character Art Pack
