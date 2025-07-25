@@ -3,7 +3,7 @@ using UnityEngine;
 namespace BiomeCity {
   public class YAxisOscillator : MonoBehaviour {
     public float maxAngle = 30f;      // Maximum rotation angle in degrees
-    public float frequency = 1f;      // Oscillation speed
+    public float frequency = 1f;      // Oscillation Speed
 
     private Quaternion startRotation;
 

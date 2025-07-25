@@ -10,10 +10,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{89A3FDE1-5402-DB8B-EB82-3040E178434B}</ProjectGuid>
+    <ProjectGuid>{A486EA38-3D53-370D-9785-BB0FEA06155E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -50,7 +50,7 @@
     <UnityProjectGenerator>Package</UnityProjectGenerator>
     <UnityProjectGeneratorVersion>2.0.23</UnityProjectGeneratorVersion>
     <UnityProjectGeneratorStyle>Legacy</UnityProjectGeneratorStyle>
-    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityProjectType>GamePlugins:3</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>6000.1.0f1</UnityVersion>
   </PropertyGroup>
@@ -61,93 +61,19 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.1.0f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ThirdParty\MatTex\PolyLabs\PNTD\Free\PNTDSampleConsts.cs" />
-    <Compile Include="Assets\Sprite Shaders Ultimate\Scripts\MaterialInstancerSSU.cs" />
-    <Compile Include="Assets\Sprite Shaders Ultimate\Demo\Scripts\Demo_VectorFollow.cs" />
-    <Compile Include="Assets\Sprite Shaders Ultimate\Demo\Scripts\Demo_DisplayTitle.cs" />
-    <Compile Include="Assets\Sprite Shaders Ultimate\Scripts\Internal\InstancerSSU.cs" />
-    <Compile Include="Assets\Sprite Shaders Ultimate\Scripts\Interactive\WindParallaxSSU.cs" />
-    <Compile Include="Assets\ThirdParty\MatTex\2D Shaders And Effects Pack\CameraAnimation.cs" />
-    <Compile Include="Assets\Sprite Shaders Ultimate\Scripts\Interactive\WindManagerSSU.cs" />
-    <Compile Include="Assets\ThirdParty\Art\2D Space Kit\Scripts\PSDestroy.cs" />
-    <Compile Include="Assets\ThirdParty\Art\2D Space Kit\Scripts\AimBeam.cs" />
-    <Compile Include="Assets\ThirdParty\MatTex\2D Shaders And Effects Pack\Effects\Electricity\ElectricityController.cs" />
-    <Compile Include="Assets\ThirdParty\Art\2D Space Kit\Scripts\ParallaxLayer.cs" />
-    <Compile Include="Assets\ThirdParty\Art\2D Space Kit\Scripts\Crosshair.cs" />
-    <Compile Include="Assets\ThirdParty\MatTex\2D Shaders And Effects Pack\Shader\OutlineShaders\AlwaysVisibleOutline\AlwaysVisibleOutline.cs" />
-    <Compile Include="Assets\Sprite Shaders Ultimate\Demo\Scripts\Demo_Player.cs" />
-    <Compile Include="Assets\Sprite Shaders Ultimate\Demo\Scripts\Demo_ColorPicker.cs" />
-    <Compile Include="Assets\ThirdParty\MatTex\2D Shaders And Effects Pack\Shader\DistortionShaders\WaterReflection\WaterController.cs" />
-    <Compile Include="Assets\ThirdParty\MatTex\2D Shaders And Effects Pack\CirclePrefab\DestroyObject.cs" />
-    <Compile Include="Assets\ThirdParty\MatTex\2D Shaders And Effects Pack\CirclePrefab\SpawnObject.cs" />
-    <Compile Include="Assets\ThirdParty\Art\2D Space Kit\Scripts\Projectile.cs" />
-    <Compile Include="Assets\ThirdParty\Art\2D Space Kit\Scripts\CustomPointer.cs" />
-    <Compile Include="Assets\ThirdParty\MatTex\2D Shaders And Effects Pack\Shader\TransparencyShaders\Teleport\HeightAndPivot.cs" />
-    <Compile Include="Assets\ThirdParty\MatTex\2D Shaders And Effects Pack\Shader\AttackAndDefenseShaders\Laser\LaserControl.cs" />
-    <Compile Include="Assets\Sprite Shaders Ultimate\Scripts\ImageSSU.cs" />
-    <Compile Include="Assets\Sprite Shaders Ultimate\Demo\Scripts\Demo_Shaders.cs" />
-    <Compile Include="Assets\Sprite Shaders Ultimate\Demo\Scripts\Demo_FloatPicker.cs" />
-    <Compile Include="Assets\ThirdParty\Art\2D Space Kit\Scripts\ShipCamera.cs" />
-    <Compile Include="Assets\Sprite Shaders Ultimate\Demo\Scripts\Demo_Display.cs" />
-    <Compile Include="Assets\Sprite Shaders Ultimate\Demo\Scripts\Demo_SpriteFader.cs" />
-    <Compile Include="Assets\Sprite Shaders Ultimate\Demo\Scripts\Demo_Camera.cs" />
-    <Compile Include="Assets\Sprite Shaders Ultimate\Scripts\Interactive\InteractiveSquishSSU.cs" />
-    <Compile Include="Assets\Sprite Shaders Ultimate\Scripts\ShaderFaderSSU.cs" />
-    <Compile Include="Assets\ThirdParty\MatTex\2D Shaders And Effects Pack\Shader\OutlineShaders\UnifiedOutline\UnifiedOutline.cs" />
-    <Compile Include="Assets\ThirdParty\MatTex\2D Shaders And Effects Pack\Shader\NatureShader\Flag\FlagController.cs" />
-    <Compile Include="Assets\Sprite Shaders Ultimate\Demo\Scripts\Demo_Trigger.cs" />
-    <Compile Include="Assets\Sprite Shaders Ultimate\Demo\Scripts\Demo_VectorPicker.cs" />
-    <Compile Include="Assets\Sprite Shaders Ultimate\Demo\Scripts\Demo_GUI.cs" />
-    <Compile Include="Assets\ThirdParty\MatTex\PolyLabs\BonusAssets\Rotator.cs" />
-    <Compile Include="Assets\Sprite Shaders Ultimate\Scripts\SpriteSheetSSU.cs" />
-    <Compile Include="Assets\Sprite Shaders Ultimate\Scripts\Interactive\InteractiveWindSSU.cs" />
-    <Compile Include="Assets\ThirdParty\Art\2D Space Kit\Scripts\ExampleShipControl.cs" />
-    <Compile Include="Assets\ThirdParty\MatTex\2D Shaders And Effects Pack\Shader\AttackAndDefenseShaders\OuterShield\ShieldController.cs" />
-    <Compile Include="Assets\Sprite Shaders Ultimate\Scripts\UnscaledTimeSSU.cs" />
-    <Compile Include="Assets\ThirdParty\MatTex\2D Shaders And Effects Pack\Shader\SeparateMaterials.cs" />
-    <Compile Include="Assets\ThirdParty\Art\2D Space Kit\Scripts\PlayerControlledTurret.cs" />
+    <Compile Include="Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" />
+    <Compile Include="Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs" />
+    <Compile Include="Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs" />
+    <Compile Include="Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs" />
+    <Compile Include="Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs" />
+    <Compile Include="Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUI.cs" />
+    <Compile Include="Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
+    <Compile Include="Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleEPOOutline.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\ThirdParty\Props\Prototype Collection\Readme.txt" />
-    <None Include="Assets\ThirdParty\Art\2D Space Kit\Backgrounds\Background Tip.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile-2-Pass.shader" />
-    <None Include="Assets\CorgiEngine\ThirdParty\MoreMountains\MMInterface\Common\Shaders\GreyScale.shader" />
-    <None Include="Assets\CorgiEngine\ThirdParty\MoreMountains\MMInterface\Common\Shaders\VerticalGradient.shader" />
-    <None Include="Assets\ThirdParty\Art\2D Space Kit\Readme.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
-    <None Include="Assets\CorgiEngine\ThirdParty\MoreMountains\InventoryEngine\readme.txt" />
-    <None Include="Assets\Sprite Shaders Ultimate\Shaders\3D Lit BuiltIn SSU.shader" />
-    <None Include="Assets\CorgiEngine\readme.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\SDFFunctions.hlsl" />
-    <None Include="Assets\Sprite Shaders Ultimate\Shaders\Multiplicative SSU.shader" />
-    <None Include="Assets\CorgiEngine\license.txt" />
-    <None Include="Assets\ThirdParty\Art\2D Space Kit\Background Elements\Planets\Planet Masks\Note.txt" />
-    <None Include="Assets\CorgiEngine\ThirdParty\MoreMountains\MMInterface\Styles\Mini\Fonts\Lato\OFL.txt" />
-    <None Include="Assets\Sprite Shaders Ultimate\Shaders\Standard SSU.shader" />
-    <None Include="Assets\Sprite Shaders Ultimate\Shaders\Additive SSU.shader" />
-    <None Include="Assets\ThirdParty\MatTex\Billion Mucks\30 Stylized Textures Free\Billion Mucks Links.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-    <None Include="Assets\ThirdParty\MatTex\Game Buffs\Free Stylized Textures\README.txt" />
-    <None Include="Assets\ThirdParty\Art\2D Space Kit\Background Elements\Stars\Recolor Us!.txt" />
-    <None Include="Assets\Sprite Shaders Ultimate\Demo\Scripts\Color Pick.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
-    <None Include="Assets\ThirdParty\Art\2D Space Kit\Particles (Sprites)\Note on Flares.txt" />
-    <None Include="Assets\ThirdParty\Art\2D Space Kit\Backgrounds\Fantasy Purple 2048\Note.txt" />
-    <None Include="Assets\ThirdParty\Art\2D Space Kit\Scripts\WARNING.txt" />
-    <None Include="Assets\Sprite Shaders Ultimate\Shaders\3D Lit Cutout URP SSU.shader" />
-    <None Include="Assets\Sprite Shaders Ultimate\Shaders\2D Lit URP SSU.shader" />
-    <None Include="Assets\CorgiEngine\ThirdParty\MoreMountains\InventoryEngine\license.txt" />
-    <None Include="Assets\ThirdParty\Art\2D Space Kit\Ships and Stations\Rendering Tip.txt" />
-    <None Include="Assets\Sprite Shaders Ultimate\Shaders\GUI SSU.shader" />
-    <None Include="Assets\Sprite Shaders Ultimate\Shaders\3D Lit Cutout BuiltIn SSU.shader" />
-    <None Include="Assets\CorgiEngine\ThirdParty\MoreMountains\MMInterface\Common\Shaders\HorizontalGradient.shader" />
-    <None Include="Assets\Sprite Shaders Ultimate\ASE\Readme.txt" />
-    <None Include="Assets\CorgiEngine\IMPORTANT-HOW-TO-INSTALL.txt" />
-    <None Include="Assets\Sprite Shaders Ultimate\Shaders\3D Lit URP SSU.shader" />
-    <None Include="Assets\Custom Character_Vol1\Read Me(En,Jp).txt" />
-    <None Include="Assets\Sprite Shaders Ultimate\Shaders\Additive GUI SSU.shader" />
-    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\Plugins\Demigiant\DOTween\DOTween.XML" />
+    <None Include="Assets\Plugins\Demigiant\DOTween\DOTween.dll" />
+    <None Include="Assets\Plugins\Demigiant\DOTween\readme.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -626,16 +552,16 @@
       <HintPath>Library\PackageCache\com.unity.testtools.codecoverage@205a02cbcb39\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="DOTween">
-      <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.visualscripting@7dcdc439b230\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Mono.Cecil">
       <HintPath>Library\PackageCache\com.unity.nuget.mono-cecil@d6f9955a5d5f\Mono.Cecil.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
@@ -1539,10 +1465,6 @@
     <ProjectReference Include="MoreMountains.Interface.csproj">
       <Project>{B5F82D03-EB76-B6F9-C28F-148803A18377}</Project>
       <Name>MoreMountains.Interface</Name>
-    </ProjectReference>
-    <ProjectReference Include="DOTween.Modules.csproj">
-      <Project>{997F8C73-FC4B-AB15-81DC-38F7E0438D34}</Project>
-      <Name>DOTween.Modules</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.CorgiEngine.Editor.csproj">
       <Project>{73190BDD-B009-88BB-2B8B-6F5E3F0711CB}</Project>

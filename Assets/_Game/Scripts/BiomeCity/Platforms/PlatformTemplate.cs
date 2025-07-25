@@ -10,7 +10,7 @@ namespace BiomeCity.Platforms {
   /// <summary>
   /// Represents a template for defining platform configurations in the BiomeCity game.
   /// </summary>
-  /// <remarks>This class is used to specify the type, prefab, and additional behaviors of a platform. It
+  /// <remarks>This class is used to specify the Type, prefab, and additional behaviors of a platform. It
   /// supports regular platforms, moving platforms, and platforms that appear and disappear.</remarks>
   [CreateAssetMenu(menuName = "BiomeCity/Platform Template")]
   public class PlatformTemplate : ScriptableObject {
